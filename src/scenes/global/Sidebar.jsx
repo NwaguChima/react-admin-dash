@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
+import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -27,23 +27,19 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[500]} !important`,
+          background: `${colors.primary[400]} !important`,
         },
-
         "& .pro-icon-wrapper": {
-          backgroundColor: `transparent !important`,
+          backgroundColor: "transparent !important",
         },
-
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
         },
-
         "& .pro-inner-item:hover": {
           color: "#868dfb !important",
         },
-
         "& .pro-menu-item.active": {
-          color: "#868dfb !important",
+          color: "#6870fa !important",
         },
       }}
     >
