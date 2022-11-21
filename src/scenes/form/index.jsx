@@ -73,6 +73,20 @@ const Form = () => {
                 helperText={touched.firstName && errors.firstName}
                 sx={{ gridColumn: "span 2" }}
               />
+
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
+                label="Last Name"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.lastName}
+                name="lastName"
+                error={!!touched.lastName && !!errors.lastName}
+                helperText={touched.lastName && errors.lastName}
+                sx={{ gridColumn: "span 2" }}
+              />
             </Box>
           </form>
         )}
